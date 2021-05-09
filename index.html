@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Thoma Hemocytometer 計算機</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+
+  <body>
+    <header>
+      <h1>Thoma Hemocytometer 計算機</h1>
+    </header>
+
+    <section class="container">
+      <div class="description">
+
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="calculator">
+        <div class="title">
+          <h1>細胞濃度の計算</h1>
+        </div>
+        <p>数えた5区画（1区画に16マス）中に存在した細胞数（半角）をそれぞれ入力して下さい。</p>
+        <ul class="number-of-cells">
+          <li><input id="number1" type="text" class="number" name="number" value="1"> ,</li>
+          <li><input id="number2" type="text" class="number" name="number" value="1"> ,</li>
+          <li><input id="number3" type="text" class="number" name="number" value="1"> ,</li>
+          <li><input id="number4" type="text" class="number" name="number" value="1"> ,</li>
+          <li><input id="number5" type="text" class="number" name="number" value="1"></li>
+        </ul>
+        <p>希釈した場合は、希釈倍率（半角）を入力して下さい。<br> 希釈していない場合は、1を入力して下さい。</p>
+        <div class="mag-wrapper">
+          <input id="dil" type="text" class="mag" value="1">倍<br>
+        </div>
+        <div class="btn-wrapper">
+          <div id="btn" type="button" class="btn">Go</div>
+        </div>
+        <div class="conc">
+          <p>細胞濃度は</p>
+          <p id="result" class="result"></p>
+          <p class="result-btm">cells/mLです。</p>
+        </div>
+      </div>
+    </section>
+    <script src="js/main.js"></script>
+  </body>
+</html>
